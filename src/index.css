@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ccc ;
+}
+
+
+.contener{
+  display: flex;
+}
+
+.category{
+  flex: 1;
+  border-right: 2px solid #ccc;
+}
+
+.products{
+  flex: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product{
+  width: calc(100% / 3 - 40px);
+}
+
+.product img{
+  width: 100%;
+}
