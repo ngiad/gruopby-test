@@ -19,13 +19,39 @@
 .category{
   flex: 1;
   border-right: 2px solid #ccc;
+  position: relative;
 }
 
+.category > div{
+  padding: 20px;
+  width: 180px;
+  margin: 0 auto;
+  position: sticky;
+  top: 20px;
+}
+
+.category > div > ul{
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category > div > ul > li{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+
+
 .products{
-  flex: 5;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  flex: 5;
   padding: 20px;
 }
 

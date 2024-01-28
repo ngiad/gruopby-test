@@ -34,13 +34,21 @@ function App() {
       </div>
       <div className="contener">
         <div className="category">
-          <Category filterCategoryForProducts={filterCategoryForProducts} />
+          <div>
+            <h4>Tìm kiếm sản phẩm</h4>
+            <Category filterCategoryForProducts={filterCategoryForProducts} />
+          </div>
         </div>
         <div className="products">
           {render.map((item, index) => (
             <Product data={item} key={index} />
           ))}
         </div>
+      </div>
+      <div className="footer">
+        <p style={{ textAlign: "center", padding: "8px", opacity: "0.9" }}>
+          @by : TRAN DAI NGHIA
+        </p>
       </div>
     </div>
   );
