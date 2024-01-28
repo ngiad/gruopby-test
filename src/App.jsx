@@ -17,7 +17,11 @@ function App() {
   const filterCategoryForProducts = (cateory) => {
     if (!cateory) setRender(data);
     else setRender(Object.groupBy(data, (item) => item.category)[cateory]);
-  }
+    // else
+    //   fetch(`https://fakestoreapi.com/products/category/${cateory}`)
+    //     .then((res) => res.json())
+    //     .then((json) => setRender(json));
+  };
 
   return (
     <div>

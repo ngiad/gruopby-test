@@ -32,7 +32,6 @@ const Category = ({ filterCategoryForProducts }) => {
                 checked={pick === item}
               />
               <label htmlFor={`input${index}`}>{item}</label>
-              {/* <button onClick={() => filterCategoryForProducts(item)}>{item}</button> */}
             </li>
           );
         })}
