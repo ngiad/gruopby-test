@@ -1,13 +1,22 @@
 import React from "react";
 
-const Product = ({ data }) => {
+const Product = ({ data, handleProduct = () => {} }) => {
   return (
     <div className="product">
       <div className="overplay">
-        <button>By now</button>
+        <button
+          onClick={() => {
+            handleProduct(data.id);
+          }}
+        >
+          By now
+        </button>
       </div>
       <div className="top">
-        <img src={data.image} alt="image" />
+        <img
+          src={data.image}
+          alt="image"
+        />
       </div>
       <div className="bottom">
         <span className="category">{data.category}</span>
